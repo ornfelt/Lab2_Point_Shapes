@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace Lab2
 {
+    // @author: Jonas Örnfelt
     class Program
     {
         static void Main(string[] args)
@@ -17,6 +18,8 @@ namespace Lab2
                 // Use original inputs from assignment
                 point = "(  1,  0)";
                 shapes = "SHAPE ,X,Y,LENGTH ,POINTS;CIRCLE ,3,1,13,100;CIRCLE ,1,-1,15,200; SQUARE\n, -1 ,0 ,20 ,300; SQUARE , -3 ,2 ,8 ,400;";
+                //shapes = "POINTS ,X,Y,LENGTH , SHAPE ;300, -1 ,0 ,20 ,SQUARE;";
+
                 // Other example inputs
                 //String point = "(  3,  100)";
                 //String point = "(  30,  1)";

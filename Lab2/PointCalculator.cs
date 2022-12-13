@@ -18,7 +18,8 @@ namespace Lab2
             {
                 finalScore += calcPoints(s);
             }
-            Console.WriteLine("Final score: " + Math.Round(finalScore, 4));
+            //Console.WriteLine("Final score: " + Math.Round(finalScore, 4));
+            Console.WriteLine("Final score: " + (int)Math.Round(finalScore, 4));
         }
 
         private double calcPoints(Shape shape)
@@ -41,15 +42,15 @@ namespace Lab2
                 //area = (shapeLength * shapeLength) / (4 * Math.PI);
                 //Console.WriteLine("area: " + area);
 
-                if (isInside(shapeX, shapeY, rad, guessX, guessY))
+                if (isInsideCircle(shapeX, shapeY, rad, guessX, guessY))
                 {
                     // Calculate points
                     score = (score * shapePoints) / area;
-                    Console.WriteLine("Inside circle. Score: " + score);
+                    //Console.WriteLine("Inside circle. Score: " + score);
                 } else
                 {
                     score = -0.25 * ((score * shapePoints) / area);
-                    Console.WriteLine("Not inside circle. Score: " + score);
+                    //Console.WriteLine("Not inside circle. Score: " + score);
                 }
             }else if (shape.TypeOfShape.Equals("square"))
             {
@@ -70,34 +71,33 @@ namespace Lab2
                 // Print bottom-left and top-right coordinates for the square
                 //Console.WriteLine("x1, y1, x2, y2: " + bottomLeftX + ", " + bottomLeftY + ", " + topRightX + ", " + topRightY);
 
-                if (FindPoint(bottomLeftX, bottomLeftY, topRightX, topRightY, guessX, guessY))
+                if (isInsideSquare(bottomLeftX, bottomLeftY, topRightX, topRightY, guessX, guessY))
                 {
                     score = (score * shapePoints) / area;
-                    Console.WriteLine("Inside square. Score: " + score);
+                    //Console.WriteLine("Inside square. Score: " + score);
                 } else
                 {
                     score = -0.25 * ((score * shapePoints) / area);
-                    Console.WriteLine("Not inside square. Score: " + score);
+                    //Console.WriteLine("Not inside square. Score: " + score);
                 }
             }
             else
             {
-                // This should never happen if the input is correct... 
+                // This should never happen
                 Console.WriteLine("Shape not recognized...");
             }
 
-            Console.WriteLine();
             return score;
         }
 
         // Bool that returns true if the point (x,y) is inside the square
-        private bool FindPoint(double x1, double y1, double x2, double y2, int x, int y)
+        private bool isInsideSquare(double x1, double y1, double x2, double y2, int x, int y)
         {
             return (x > x1 && x < x2 && y > y1 && y < y2);
         }
 
         // Bool that returns true if the point (x,y) is inside the circle
-        private bool isInside(int circle_x, int circle_y, double rad, int x, int y)
+        private bool isInsideCircle(int circle_x, int circle_y, double rad, int x, int y)
         {
             // Return true / false by comparing the distance between given point and radius of circle 
             //Console.WriteLine("Circle calculation: " + ((x - circle_x) * (x - circle_x) + (y - circle_y) * (y - circle_y)) + " <= " + rad * rad);

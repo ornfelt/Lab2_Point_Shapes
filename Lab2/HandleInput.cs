@@ -87,26 +87,28 @@ namespace Lab2
             while (counter <= listValues.Length-1)
             {
                 string value = listValues[counter].ToLower();
-                // Add values to the correct lists
-                if (counter == shapeIndex + amountOfCols * valueLap)
-                {
-                    listShape.Add(value);
-                } else if (counter == xIndex + amountOfCols * valueLap)
-                {
-                    listX.Add(value);
-                } else if (counter == yIndex + amountOfCols * valueLap)
-                {
-                    listY.Add(value);
-                } else if (counter == lengthIndex + amountOfCols * valueLap)
-                {
-                    listLength.Add(value);
-                } else if (counter == pointIndex + amountOfCols * valueLap)
-                {
-                    listPoint.Add(value);
-                } else
-                {
-                    // This should never happen
-                    Console.WriteLine("Error when extracing values...");
+                if (value != String.Empty) {
+                    // Add values to the correct lists
+                    if (counter == shapeIndex + amountOfCols * valueLap)
+                    {
+                        listShape.Add(value);
+                    } else if (counter == xIndex + amountOfCols * valueLap)
+                    {
+                        listX.Add(value);
+                    } else if (counter == yIndex + amountOfCols * valueLap)
+                    {
+                        listY.Add(value);
+                    } else if (counter == lengthIndex + amountOfCols * valueLap)
+                    {
+                        listLength.Add(value);
+                    } else if (counter == pointIndex + amountOfCols * valueLap)
+                    {
+                        listPoint.Add(value);
+                    } else
+                    {
+                        // This should never happen
+                        Console.WriteLine("Error when extracing values...");
+                    }
                 }
 
                 counter++;
@@ -118,7 +120,7 @@ namespace Lab2
             //printExtractedValues();
 
             // Add the extracted values to a shape list
-            for (int i = 0; i < listShape.Count()-1; i++)
+            for (int i = 0; i < listShape.Count(); i++)
             {
                 // Create new temporary shape object that will be added to shapesList
                 Shape shape = new Shape();
@@ -129,12 +131,10 @@ namespace Lab2
                 shape.Length = Int32.Parse(listLength[i]);
                 shape.Point = Int32.Parse(listPoint[i]);
                 // Object to string method
-                Console.WriteLine("Shape: " + shape.TypeOfShape + ", x: " + shape.X + ", y: " + shape.Y + 
-                    ", length: " + shape.Length + ", point: " + shape.Point);
+                //Console.WriteLine("Shape: " + shape.TypeOfShape + ", x: " + shape.X + ", y: " + shape.Y + 
+                    //", length: " + shape.Length + ", point: " + shape.Point);
                 shapesList.Add(shape);
             }
-            Console.WriteLine();
-
             return shapesList;
         }
 
@@ -168,7 +168,6 @@ namespace Lab2
                 Console.WriteLine(s);
             }
             Console.WriteLine("");
-
         }
     }
 }
