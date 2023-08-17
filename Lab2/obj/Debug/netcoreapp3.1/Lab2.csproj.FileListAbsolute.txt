@@ -12,3 +12,17 @@ C:\Users\Svea User\source\repos\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.csproj.Co
 C:\Users\Svea User\source\repos\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.dll
 C:\Users\Svea User\source\repos\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.pdb
 C:\Users\Svea User\source\repos\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.genruntimeconfig.cache
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\bin\Debug\netcoreapp3.1\Lab2.exe
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\bin\Debug\netcoreapp3.1\Lab2.deps.json
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\bin\Debug\netcoreapp3.1\Lab2.runtimeconfig.json
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\bin\Debug\netcoreapp3.1\Lab2.runtimeconfig.dev.json
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\bin\Debug\netcoreapp3.1\Lab2.dll
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\bin\Debug\netcoreapp3.1\Lab2.pdb
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\obj\Debug\netcoreapp3.1\Lab2.csproj.AssemblyReference.cache
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\obj\Debug\netcoreapp3.1\Lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\obj\Debug\netcoreapp3.1\Lab2.AssemblyInfoInputs.cache
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\obj\Debug\netcoreapp3.1\Lab2.AssemblyInfo.cs
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\obj\Debug\netcoreapp3.1\Lab2.csproj.CoreCompileInputs.cache
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\obj\Debug\netcoreapp3.1\Lab2.dll
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\obj\Debug\netcoreapp3.1\Lab2.pdb
+C:\Users\jonas\Source\Repos\Lab2_Point_Shapes\Lab2\obj\Debug\netcoreapp3.1\Lab2.genruntimeconfig.cache
